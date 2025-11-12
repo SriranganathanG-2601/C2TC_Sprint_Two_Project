@@ -5,26 +5,26 @@
 }
 
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #64748b;
-  --danger-color: #ef4444;
-  --success-color: #10b981;
-  --warning-color: #f59e0b;
-  --light-bg: #f8fafc;
-  --border-color: #e2e8f0;
-  --text-dark: #1e293b;
-  --text-light: #64748b;
+  --primary-color: #6366f1;
+  --secondary-color: #8b5cf6;
+  --danger-color: #ec4899;
+  --success-color: #14b8a6;
+  --warning-color: #f97316;
+  --light-bg: #f5f3ff;
+  --border-color: #e9d5ff;
+  --text-dark: #312e81;
+  --text-light: #7c3aed;
 }
 
 body, html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f1f5f9;
+  background: linear-gradient(135deg, #f5f3ff 0%, #faf5ff 100%);
   color: var(--text-dark);
 }
 
 .App {
   min-height: 100vh;
-  background-color: #f1f5f9;
+  background: linear-gradient(135deg, #f5f3ff 0%, #faf5ff 100%);
 }
 
 .App > * {
@@ -34,12 +34,12 @@ body, html {
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   color: white;
   padding: 25px 15px;
   margin: 10px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
   text-align: center;
   max-width: 1400px;
 }
@@ -58,8 +58,8 @@ body, html {
 /* Main Content */
 .main-content {
   background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
   overflow: hidden;
   margin: 0 20px 30px;
   max-width: 1400px;
@@ -68,7 +68,7 @@ body, html {
 /* Form Section */
 .form-section {
   padding: 20px;
-  background-color: var(--light-bg);
+  background: linear-gradient(135deg, var(--light-bg) 0%, #fef2f9 100%);
   border-bottom: 2px solid var(--border-color);
 }
 
@@ -131,7 +131,7 @@ body, html {
 .btn {
   padding: 8px 16px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
@@ -146,9 +146,9 @@ body, html {
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  background-color: #4f46e5;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.4);
 }
 
 .btn-primary:active {
@@ -161,9 +161,9 @@ body, html {
 }
 
 .btn-secondary:hover {
-  background-color: #475569;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3);
+  background-color: #7c3aed;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(139, 92, 246, 0.4);
 }
 
 .btn-edit {
@@ -174,7 +174,8 @@ body, html {
 }
 
 .btn-edit:hover {
-  background-color: #d97706;
+  background-color: #ea580c;
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
 }
 
 .btn-delete {
@@ -186,7 +187,8 @@ body, html {
 }
 
 .btn-delete:hover {
-  background-color: #dc2626;
+  background-color: #db2777;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
 }
 
 .btn-danger {
@@ -195,7 +197,8 @@ body, html {
 }
 
 .btn-danger:hover {
-  background-color: #dc2626;
+  background-color: #db2777;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
 }
 
 /* Messages */
@@ -216,20 +219,20 @@ body, html {
 }
 
 .message.success {
-  background-color: #d1fae5;
-  color: #065f46;
+  background-color: #ccfbf1;
+  color: #0d4e3d;
   border-left: 4px solid var(--success-color);
 }
 
 .message.error {
-  background-color: #fee2e2;
-  color: #991b1b;
+  background-color: #fbcfe8;
+  color: #831843;
   border-left: 4px solid var(--danger-color);
 }
 
 .message.info {
-  background-color: #dbeafe;
-  color: #0c2d6b;
+  background-color: #e9d5ff;
+  color: #4c1d95;
   border-left: 4px solid var(--primary-color);
 }
 
